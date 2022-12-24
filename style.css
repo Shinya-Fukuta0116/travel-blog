@@ -24,13 +24,12 @@ body{
 }
 
 #header .site-title{
- padding: 32px 16px;
+ padding: 34px 16px;
  line-height: 3px;
  font-size: 1.7rem;
 }
 
 nav ul{
-  
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -69,12 +68,6 @@ article img{
   width: 373px;
 }
 
-#pickup{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 150px;
-  margin-bottom: 60px;
-}
 
 .readmore{
   margin-top: 8px;
@@ -282,6 +275,73 @@ article a{
   color: #333;
 }
 
+@media screen and (max-width:767px) {
+  #pickup{
+    padding-top: 140px;
+    flex-direction: column;
+  }
+
+  #pickup article {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .readmore{
+    text-align: left;
+    margin-left: 230px;
+  }
+
+  section{
+    width: 100%;
+  }
+
+  img{
+    max-width: 100%;
+    border-style: none;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .author img {
+    height: 160px;
+    width: 160px;
+    margin: 0 0 30px;
+    border-radius: 50%;
+  }
+
+  article img {
+    max-width: 100%;
+    object-fit: cover;
+    border-style: none;
+    height: 315px;
+    width: 561px;
+}
+
+  #sidebar{
+    width: auto;
+  }
+  
+  #container{
+    width: 100%;
+    display: block;
+  }
+  .wrapper{
+  width: 100vh;  
+  }
+  footer{
+    width: 100%;
+  }
+
+  #footer .content{
+    display: block;
+    width: 100vh;
+  }
+  
+
+
+}
 
 
 
